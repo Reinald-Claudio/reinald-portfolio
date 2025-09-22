@@ -1,0 +1,107 @@
+/* ------ Global reset ------ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------ Theme  ------ */
+:root {
+  --accent: hsl(243, 100%, 55%);
+  --accent-dark: hsl(243, 80%, 35%);
+  --accent-light: hsl(243, 100%, 90%);
+}
+
+/* ------ Base styles ------ */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: hsl(0, 0%, 96%);
+  color: hsl(0, 0%, 20%);
+  padding: 20px;
+}
+
+/* ---------- Header ---------- */
+header{
+  text-align: center;
+  padding-bottom: 1rem;
+}
+header h1{
+  font-size: 2.2rem;
+  margin-bottom: 0.25rem;
+  color: var(--accent);
+}
+header h3{
+  font-weight: normal;
+  color: hsl(0, 0%, 40%);
+}
+header hr{
+  border: none;
+  height: 3px;
+  width: 60px;
+  margin: 0.5rem auto 0;
+  background: var(--accent-dark);   
+  border-radius: 2px;
+}
+
+/* ------ Sections ------ */
+main section{
+  background: white;
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.05);
+}
+main h2{
+  margin-bottom: 0.5rem;
+  color: hsl(0, 0%, 27%);
+}
+
+/* ------ Lists ------ */
+ul{
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+dl{
+  padding-left: 1.0rem;
+  margin: 0;
+}
+dt{
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0rem;
+}
+dt::before{
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 1.3rem;
+  line-height: 1.24;
+  color: var(--accent-dark);
+}
+dd{
+  margin: 0 0 0.5rem 2.8rem;
+  margin-left: 2.2rem;
+}
+
+/* ------ Links ------ */
+a{
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover{
+  text-decoration: underline;
+  color: var(--accent-dark);
+}
+
+/* ------ Contact list ------ */
+
+.contact ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
